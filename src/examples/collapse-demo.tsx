@@ -50,7 +50,7 @@ export default function CollapseDemo() {
                     />
                   </Box>
                   
-                  <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+                  <Box sx={{ p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
                     <Typography variant="body2">
                       Análisis detallado del balance de carbono en las fincas monitoreadas.
                     </Typography>
@@ -79,7 +79,7 @@ export default function CollapseDemo() {
                     />
                   </Box>
                   
-                  <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+                  <Box sx={{ p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
                     <Typography variant="body2">
                       Monitoreo de la cobertura forestal y análisis de deforestación.
                     </Typography>
@@ -114,7 +114,7 @@ export default function CollapseDemo() {
                     />
                   </Box>
                   
-                  <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+                  <Box sx={{ p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
                     <Typography variant="body2">
                       Sistema de gestión y monitoreo del recurso hídrico.
                     </Typography>
@@ -156,7 +156,7 @@ export default function CollapseDemo() {
                     </Button>
                   </Box>
                   
-                  <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+                  <Box sx={{ p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
                     <Typography variant="body2">
                       Contenido adicional dentro del collapse.
                     </Typography>
@@ -176,7 +176,7 @@ export default function CollapseDemo() {
               </Typography>
               
               <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 2 }}>
-                <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1, textAlign: 'center' }}>
+                <Box sx={{ p: 2, bgcolor: '#ffffff', borderRadius: 1, textAlign: 'center' }}>
                   <Typography variant="caption" display="block">
                     Balance de Carbono
                   </Typography>
@@ -185,7 +185,7 @@ export default function CollapseDemo() {
                   </Typography>
                 </Box>
                 
-                <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1, textAlign: 'center' }}>
+                <Box sx={{ p: 2, bgcolor: '#ffffff', borderRadius: 1, textAlign: 'center' }}>
                   <Typography variant="caption" display="block">
                     Cobertura Forestal
                   </Typography>
@@ -194,7 +194,7 @@ export default function CollapseDemo() {
                   </Typography>
                 </Box>
                 
-                <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1, textAlign: 'center' }}>
+                <Box sx={{ p: 2, bgcolor: '#ffffff', borderRadius: 1, textAlign: 'center' }}>
                   <Typography variant="caption" display="block">
                     Gestión del Agua
                   </Typography>
@@ -206,7 +206,7 @@ export default function CollapseDemo() {
             </Stack>
           </Box>
 
-          <Box sx={{ mt: 2, p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+          <Box sx={{ mt: 2, p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
             <Typography variant="caption" color="text.secondary">
               Collapse replica exactly the design from full_dashboard.txt
             </Typography>

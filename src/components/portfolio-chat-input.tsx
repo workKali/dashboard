@@ -41,7 +41,7 @@ export default function PortfolioChatInput({
       sx={{
         padding: '8px 12px 12px',
         flexShrink: 0,
-        borderTop: showTopBorder ? `1px solid ${theme.palette.divider}` : 'none',
+        borderTop: showTopBorder ? '1px solid rgb(225, 232, 231)' : 'none',
         width: useFullWidth ? '100%' : 'auto',
       }}
     >
@@ -51,9 +51,9 @@ export default function PortfolioChatInput({
           display: 'flex',
           gap: '6px',
           alignItems: 'center',
-          background: theme.palette.background.paper,
+          background: '#ffffff',
           borderRadius: '8px',
-          border: `1px solid ${theme.palette.divider}`,
+          border: '1px solid rgb(225, 232, 231)',
           padding: '4px 6px 4px 10px',
         }}
       >
@@ -67,13 +67,13 @@ export default function PortfolioChatInput({
             flex: 1,
             border: 'none',
             outline: 'none',
-            fontSize: 'var(--font-size-md)',
-            color: theme.palette.text.primary,
+            fontSize: '10.5px',
+            color: 'rgb(15, 31, 20)',
             background: 'transparent',
             '& .MuiInputBase-input': {
               padding: 0,
               '&::placeholder': {
-                color: theme.palette.text.secondary,
+                color: 'rgb(122, 158, 142)',
                 opacity: 0.7,
               },
             },
@@ -88,20 +88,20 @@ export default function PortfolioChatInput({
           disabled={isInputDisabled || !query.trim()}
           size="small"
           sx={{
-            background: theme.palette.primary.main,
+            background: '#16a34a',
             color: '#fff',
             border: 'none',
             borderRadius: '6px',
             padding: '4px 10px',
             cursor: isInputDisabled || !query.trim() ? 'not-allowed' : 'pointer',
-            fontSize: 'var(--font-size-sm)',
+            fontSize: '10px',
             fontWeight: 700,
             flexShrink: 0,
             minWidth: 'auto',
             '&:hover': {
               background: isInputDisabled || !query.trim() 
-                ? theme.palette.primary.main 
-                : theme.palette.primary.dark,
+                ? '#16a34a' 
+                : '#166534',
             },
             '&:disabled': {
               opacity: 0.6,

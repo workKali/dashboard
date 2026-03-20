@@ -49,14 +49,14 @@ export default function TabsDemo() {
               
               <Box sx={{ 
                 p: 2, 
-                bgcolor: 'background.default', 
+                bgcolor: '#ffffff', 
                 borderRadius: 1,
                 minHeight: 100,
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center'
               }}>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="rgb(122, 158, 142)">
                   Contenido activo: <strong>{activeTab}</strong>
                 </Typography>
               </Box>
@@ -139,10 +139,10 @@ export default function TabsDemo() {
               
               <Box sx={{ 
                 p: 3, 
-                bgcolor: 'background.default', 
+                bgcolor: '#ffffff', 
                 borderRadius: 1,
                 border: '1px solid',
-                borderColor: 'divider'
+                borderColor: 'rgb(225, 232, 231)'
               }}>
                 {activeTab === 'resumen' && (
                   <Typography variant="body2">
@@ -168,32 +168,32 @@ export default function TabsDemo() {
             </Stack>
           </Box>
 
-          <Box sx={{ mt: 2, p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
-            <Typography variant="caption" color="text.secondary">
+          <Box sx={{ mt: 2, p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
+            <Typography variant="caption" color="rgb(122, 158, 142)">
               Tabs replica exactly the design from your example
             </Typography>
             <Box sx={{ mt: 1 }}>
-              <Typography variant="caption" color="text.secondary">
+              <Typography variant="caption" color="rgb(122, 158, 142)">
                 • Active tab: border-bottom 2px solid primary color, font-weight 600
               </Typography>
             </Box>
             <Box sx={{ mt: 0.5 }}>
-              <Typography variant="caption" color="text.secondary">
+              <Typography variant="caption" color="rgb(122, 158, 142)">
                 • Inactive tab: border-bottom 2px solid transparent, font-weight 400
               </Typography>
             </Box>
             <Box sx={{ mt: 0.5 }}>
-              <Typography variant="caption" color="text.secondary">
+              <Typography variant="caption" color="rgb(122, 158, 142)">
                 • Typography: 11px, Poppins family, white-space nowrap
               </Typography>
             </Box>
             <Box sx={{ mt: 0.5 }}>
-              <Typography variant="caption" color="text.secondary">
+              <Typography variant="caption" color="rgb(122, 158, 142)">
                 • Layout: flex, overflow-x auto, flex-shrink 0, horizontal scroll
               </Typography>
             </Box>
             <Box sx={{ mt: 0.5 }}>
-              <Typography variant="caption" color="text.secondary">
+              <Typography variant="caption" color="rgb(122, 158, 142)">
                 • Transition: color 0.15s smooth animation
               </Typography>
             </Box>

@@ -21,6 +21,8 @@ import StatCardDemo from './stat-card-demo';
 import TabsDemo from './tabs-demo';
 import FormStyledDemo from './form-styled-demo';
 import CollapseDemo from './collapse-demo';
+import AgroButtonShowcase from './AgroButtonShowcase';
+import GenericButtonShowcase from './generic-button-showcase';
 
 export default function DesignShowcase() {
   return (
@@ -39,40 +41,40 @@ export default function DesignShowcase() {
             <Box>
               <Typography variant="body2" sx={{ mb: 1 }}>Primary Colors</Typography>
               <Stack direction="row" spacing={1}>
-                <Box sx={{ width: 60, height: 40, bgcolor: 'primary.50', border: 1, borderColor: 'divider' }} />
-                <Box sx={{ width: 60, height: 40, bgcolor: 'primary.300', border: 1, borderColor: 'divider' }} />
-                <Box sx={{ width: 60, height: 40, bgcolor: 'primary.500', border: 1, borderColor: 'divider' }} />
-                <Box sx={{ width: 60, height: 40, bgcolor: 'primary.700', border: 1, borderColor: 'divider' }} />
-                <Box sx={{ width: 60, height: 40, bgcolor: 'primary.900', border: 1, borderColor: 'divider' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'primary.50', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'primary.300', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'primary.500', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'primary.700', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'primary.900', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
               </Stack>
             </Box>
             
             <Box>
               <Typography variant="body2" sx={{ mb: 1 }}>Secondary Colors</Typography>
               <Stack direction="row" spacing={1}>
-                <Box sx={{ width: 60, height: 40, bgcolor: 'secondary.300', border: 1, borderColor: 'divider' }} />
-                <Box sx={{ width: 60, height: 40, bgcolor: 'secondary.500', border: 1, borderColor: 'divider' }} />
-                <Box sx={{ width: 60, height: 40, bgcolor: 'secondary.700', border: 1, borderColor: 'divider' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'secondary.300', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'secondary.500', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'secondary.700', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
               </Stack>
             </Box>
             
             <Box>
               <Typography variant="body2" sx={{ mb: 1 }}>Info Colors</Typography>
               <Stack direction="row" spacing={1}>
-                <Box sx={{ width: 60, height: 40, bgcolor: 'info.50', border: 1, borderColor: 'divider' }} />
-                <Box sx={{ width: 60, height: 40, bgcolor: 'info.300', border: 1, borderColor: 'divider' }} />
-                <Box sx={{ width: 60, height: 40, bgcolor: 'info.500', border: 1, borderColor: 'divider' }} />
-                <Box sx={{ width: 60, height: 40, bgcolor: 'info.700', border: 1, borderColor: 'divider' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'info.50', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'info.300', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'info.500', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'info.700', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
               </Stack>
             </Box>
             
             <Box>
               <Typography variant="body2" sx={{ mb: 1 }}>Semantic Colors</Typography>
               <Stack direction="row" spacing={1}>
-                <Box sx={{ width: 60, height: 40, bgcolor: 'success.main', border: 1, borderColor: 'divider' }} />
-                <Box sx={{ width: 60, height: 40, bgcolor: 'warning.main', border: 1, borderColor: 'divider' }} />
-                <Box sx={{ width: 60, height: 40, bgcolor: 'error.main', border: 1, borderColor: 'divider' }} />
-                <Box sx={{ width: 60, height: 40, bgcolor: 'info.main', border: 1, borderColor: 'divider' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'success.main', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'warning.main', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'error.main', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
+                <Box sx={{ width: 60, height: 40, bgcolor: 'info.main', border: 1, borderColor: 'rgb(225, 232, 231)' }} />
               </Stack>
             </Box>
           </Stack>
@@ -202,7 +204,7 @@ export default function DesignShowcase() {
               display: 'flex', 
               gap: 1, 
               p: 2, 
-              bgcolor: 'background.default', 
+              bgcolor: '#ffffff', 
               borderRadius: 1 
             }}>
               <Box sx={{ width: 40, height: 40, bgcolor: 'primary.main', borderRadius: 1 }} />
@@ -215,6 +217,12 @@ export default function DesignShowcase() {
           </Stack>
         </CardContent>
       </Card>
+
+      {/* AgroButtonShowcase */}
+      <AgroButtonShowcase />
+
+      {/* GenericButtonShowcase */}
+      <GenericButtonShowcase />
     </Box>
   );
 }

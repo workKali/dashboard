@@ -167,6 +167,109 @@
       "boxShadow": "0 1px 4px rgba(15,31,20,0.04)"
     },
     "button": {
+      "variants": {
+        "export": {
+          "backgroundColor": "transparent",
+          "border": "1px solid #e1e8e7",
+          "borderRadius": "8px",
+          "padding": "4px 12px",
+          "fontSize": "10px",
+          "fontWeight": 600,
+          "color": "#0f1f14",
+          "textTransform": "none"
+        },
+        "toggle": {
+          "backgroundColor": "transparent",
+          "border": "none",
+          "borderBottom": "2px solid #16a34a",
+          "borderRadius": "0px",
+          "padding": "9px 14px",
+          "fontSize": "10px",
+          "fontWeight": 600,
+          "color": "#0f1f14",
+          "textTransform": "none"
+        },
+        "action": {
+          "backgroundColor": "#16a34a",
+          "border": "none",
+          "borderRadius": "6px",
+          "padding": "3px 10px",
+          "fontSize": "10px",
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "textTransform": "none"
+        },
+        "pill": {
+          "backgroundColor": "#fee2e2",
+          "border": "1px solid #fecaca",
+          "borderRadius": "20px",
+          "padding": "2px 10px",
+          "fontSize": "10.5px",
+          "fontWeight": 600,
+          "color": "#991b1b",
+          "textTransform": "none"
+        },
+        "filter": {
+          "backgroundColor": "#f0fdf4",
+          "border": "1px solid #e1e8e7",
+          "borderRadius": "8px",
+          "padding": "5px 10px",
+          "fontSize": "10.5px",
+          "fontWeight": 600,
+          "color": "#0f1f14",
+          "textTransform": "none"
+        },
+        "modal": {
+          "backgroundColor": "#16a34a",
+          "border": "none",
+          "borderRadius": "10px",
+          "padding": "11px",
+          "fontSize": "11px",
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "textTransform": "none",
+          "width": "100%"
+        },
+        "inline": {
+          "backgroundColor": "#dcfce7",
+          "border": "1px solid #bbf7d0",
+          "borderRadius": "6px",
+          "padding": "2px 7px",
+          "fontSize": "10px",
+          "fontWeight": 600,
+          "color": "#166534",
+          "textTransform": "none",
+          "minWidth": "auto"
+        },
+        "primary": {
+          "backgroundColor": "#16a34a",
+          "border": "1px solid #16a34a",
+          "borderRadius": "8px",
+          "padding": "4px 12px",
+          "fontSize": "10px",
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "textTransform": "none"
+        }
+      },
+      "sizes": {
+        "xs": {
+          "padding": "2px 6px",
+          "fontSize": "9px"
+        },
+        "sm": {
+          "padding": "4px 12px",
+          "fontSize": "10px"
+        },
+        "md": {
+          "padding": "6px 16px",
+          "fontSize": "11px"
+        },
+        "lg": {
+          "padding": "8px 20px",
+          "fontSize": "12px"
+        }
+      },
       "contained": {
         "backgroundColor": "#16a34a",
         "color": "#ffffff",

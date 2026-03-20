@@ -28,8 +28,8 @@ export default function Collapse({
   return (
     <Box
       sx={{
-        background: theme.palette.background.paper,
-        border: `1px solid ${theme.palette.divider}`,
+        background: '#ffffff',
+        border: '1px solid rgb(225, 232, 231)',
         borderRadius: '12px',
         overflow: 'hidden',
         boxShadow: '0 1px 4px rgba(15,31,20,0.04)',
@@ -45,18 +45,18 @@ export default function Collapse({
           padding: '12px 16px',
           cursor: 'pointer',
           userSelect: 'none',
-          borderBottom: open ? `1px solid ${theme.palette.divider}` : 'none',
+          borderBottom: open ? '1px solid rgb(225, 232, 231)' : 'none',
           '&:hover': {
-            backgroundColor: theme.palette.action.hover,
+            backgroundColor: 'rgba(15, 31, 20, 0.04)',
           },
         }}
       >
         <Typography
           sx={{
-            fontSize: 'var(--font-size-md)',
+            fontSize: '11px',
             fontWeight: 700,
-            color: theme.palette.text.primary,
-                        textTransform: 'uppercase',
+            color: 'rgb(15, 31, 20)',
+            textTransform: 'uppercase',
             letterSpacing: '0.06em',
           }}
         >
@@ -66,8 +66,8 @@ export default function Collapse({
         <Typography
           sx={{
             fontSize: '18px',
-            color: theme.palette.text.secondary,
-                        lineHeight: 1,
+            color: 'rgb(122, 158, 142)',
+            lineHeight: 1,
             fontWeight: 300,
           }}
         >

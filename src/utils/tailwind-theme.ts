@@ -89,14 +89,56 @@ export const colors = {
   divider: 'rgb(229, 231, 235)',
 };
 
-// Font sizes that match design tokens
+// Enhanced font sizes that match design tokens
 export const fontSizes = {
-  xs: '9.5px',
-  sm: '10px',
-  base: '10.5px',
-  md: '11px',
-  lg: '13px',
-  xl: '22px',
+  xs: '9.5px',   // UI elements, captions
+  sm: '10px',    // Small buttons, labels
+  base: '10.5px', // Default text
+  md: '11px',    // Medium text
+  lg: '13px',    // Large text
+  xl: '22px',    // Headers
+  '2xl': '24px', // Large headers
+  '3xl': '30px', // Hero text
+  '4xl': '36px', // Display text
+};
+
+// Enhanced font weights for better control
+export const fontWeights = {
+  extralight: 200,
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  black: 900,
+};
+
+// Optimized line heights for readability
+export const lineHeights = {
+  none: 1,
+  tight: 1,
+  snug: 1.05,
+  normal: 1.1,
+  relaxed: 1.25,
+  loose: 1.5,
+  // Line heights for specific font sizes
+  xs: 1.2,
+  sm: 1.15,
+  base: 1.1,
+  md: 1.2,
+  lg: 1.3,
+  xl: 1.4,
+};
+
+// Enhanced letter spacing
+export const letterSpacing = {
+  tighter: '-0.05em',
+  tight: '0.06em',
+  normal: '0',
+  wide: '0.08em',
+  wider: '0.1em',
+  widest: '0.15em',
 };
 
 // Spacing tokens
@@ -208,14 +250,50 @@ export const sxToTailwind = (sx: Record<string, any>): string[] => {
   return classes;
 };
 
+// Enhanced typography patterns for common use cases
+export const typographyPatterns = {
+  // Heading patterns
+  heading: {
+    display: 'text-4xl font-black leading-xl tracking-tight',
+    hero: 'text-3xl font-bold leading-xl tracking-tight',
+    section: 'text-2xl font-semibold leading-lg tracking-tight uppercase',
+    subsection: 'text-xl font-semibold leading-lg tracking-tight',
+    small: 'text-lg font-semibold leading-md tracking-normal',
+    micro: 'text-md font-semibold leading-md tracking-normal',
+  },
+  
+  // Body text patterns
+  body: {
+    default: 'text-base font-normal leading-base tracking-normal',
+    medium: 'text-base font-medium leading-base tracking-normal',
+    small: 'text-sm font-normal leading-sm tracking-normal',
+    caption: 'text-xs font-normal leading-xs tracking-normal',
+  },
+  
+  // Button patterns
+  button: {
+    primary: 'text-sm font-semibold leading-tight tracking-tight',
+    small: 'text-xs font-semibold leading-tight tracking-tight',
+    large: 'text-md font-semibold leading-snug tracking-tight',
+  },
+  
+  // UI patterns
+  ui: {
+    label: 'text-sm font-medium leading-sm tracking-normal',
+    input: 'text-base font-normal leading-base tracking-normal',
+    nav: 'text-sm font-semibold leading-tight tracking-tight',
+    badge: 'text-xs font-semibold leading-none tracking-wide uppercase',
+  },
+};
+
 // Pre-defined Tailwind class combinations for common MUI patterns
 export const tailwindPatterns = {
   // Button patterns
   button: {
-    primary: 'bg-primary text-white rounded-button px-4 py-2 font-medium hover:bg-primary-dark transition-colors',
-    secondary: 'bg-secondary text-white rounded-button px-4 py-2 font-medium hover:bg-secondary-dark transition-colors',
-    error: 'bg-error text-white rounded-button px-4 py-2 font-medium hover:bg-error-dark transition-colors',
-    outlined: 'border border-primary text-primary rounded-button px-4 py-2 font-medium hover:bg-primary hover:text-white transition-colors',
+    primary: 'bg-primary text-white rounded-button px-4 py-2 font-semibold hover:bg-primary-dark transition-colors',
+    secondary: 'bg-secondary text-white rounded-button px-4 py-2 font-semibold hover:bg-secondary-dark transition-colors',
+    error: 'bg-error text-white rounded-button px-4 py-2 font-semibold hover:bg-error-dark transition-colors',
+    outlined: 'border border-primary text-primary rounded-button px-4 py-2 font-semibold hover:bg-primary hover:text-white transition-colors',
   },
   
   // Card patterns
@@ -224,14 +302,21 @@ export const tailwindPatterns = {
   // Input patterns
   input: 'border border-divider rounded-button px-3 py-2 text-sm focus:border-primary focus:outline-none transition-colors',
   
-  // Typography patterns
+  // Typography patterns (updated with enhanced tokens)
   text: {
-    h1: 'text-xl font-bold text-primary',
-    h2: 'text-lg font-semibold text-primary',
-    h3: 'text-md font-semibold text-primary',
-    body1: 'text-base text-primary',
-    body2: 'text-sm text-secondary',
-    caption: 'text-xs text-secondary',
+    h1: 'text-4xl font-bold leading-xl tracking-tight',
+    h2: 'text-3xl font-bold leading-xl tracking-tight',
+    h3: 'text-2xl font-semibold leading-lg tracking-tight uppercase',
+    h4: 'text-xl font-semibold leading-lg tracking-tight',
+    h5: 'text-lg font-semibold leading-md tracking-normal',
+    h6: 'text-md font-semibold leading-md tracking-normal',
+    subtitle1: 'text-md font-medium leading-normal tracking-normal',
+    subtitle2: 'text-sm font-medium leading-sm tracking-normal',
+    body1: 'text-base font-normal leading-base tracking-normal',
+    body2: 'text-sm font-normal leading-sm tracking-normal',
+    button: 'text-sm font-semibold leading-tight tracking-tight',
+    caption: 'text-xs font-normal leading-xs tracking-normal',
+    overline: 'text-xs font-semibold leading-none tracking-wide uppercase',
   },
   
   // Layout patterns
@@ -249,10 +334,14 @@ export const tailwindPatterns = {
 export const theme = {
   colors,
   fontSizes,
+  fontWeights,
+  lineHeights,
+  letterSpacing,
   spacing,
   borderRadius,
   shadows,
   patterns: tailwindPatterns,
+  typography: typographyPatterns,
   getTailwindColor,
   sxToTailwind,
 };

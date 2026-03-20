@@ -24,7 +24,7 @@ export default function TitledSection({
           sx={{
             marginBottom: '12px',
             paddingBottom: showBottomBorder ? '10px' : 0,
-            borderBottom: showBottomBorder ? `1px solid ${theme.palette.divider}` : 'none',
+            borderBottom: showBottomBorder ? '1px solid rgb(225, 232, 231)' : 'none',
           }}
         >
           {sectionTitle && (
@@ -32,8 +32,8 @@ export default function TitledSection({
               variant="h3"
               component="h3"
               sx={{
-                color: theme.palette.text.secondary,
-                fontSize: 'var(--font-size-md)',
+                color: 'rgb(122, 158, 142)',
+                fontSize: '11px',
                 fontWeight: 600,
                 letterSpacing: '0.06em',
                 textTransform: 'uppercase',
@@ -48,8 +48,8 @@ export default function TitledSection({
             <Typography
               variant="body2"
               sx={{
-                color: theme.palette.text.secondary,
-                fontSize: 'var(--font-size-base)',
+                color: 'rgb(122, 158, 142)',
+                fontSize: '10.5px',
                 fontWeight: 300,
                 margin: '2px 0 0',
               }}

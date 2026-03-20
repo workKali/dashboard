@@ -26,11 +26,11 @@ export default function TitledSectionDemo() {
                   gridTemplateColumns: 'repeat(2, 1fr)', 
                   gap: 2 
                 }}>
-                  <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+                  <Box sx={{ p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
                     <Typography variant="h6">Propósito del Hato</Typography>
                     <Typography variant="body2">22,080 cabezas</Typography>
                   </Box>
-                  <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+                  <Box sx={{ p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
                     <Typography variant="h6">Mix de Razas</Typography>
                     <Typography variant="body2">5 razas principales</Typography>
                   </Box>
@@ -41,7 +41,7 @@ export default function TitledSectionDemo() {
                 sectionTitle="Manejo de Pastos"
                 sectionSubtitle="Total: 1,250 ha"
               >
-                <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+                <Box sx={{ p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
                   <Typography variant="body2">
                     Información detallada sobre manejo de pastos y áreas de cultivo.
                   </Typography>
@@ -52,7 +52,7 @@ export default function TitledSectionDemo() {
                 sectionTitle="Manejo Integrado de Plagas"
                 sectionSubtitle="Total: 450 fincas"
               >
-                <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+                <Box sx={{ p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
                   <Typography variant="body2">
                     Control integrado de plagas en las fincas monitoreadas.
                   </Typography>
@@ -128,7 +128,7 @@ export default function TitledSectionDemo() {
                   </Box>
                 </Box>
                 
-                <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+                <Box sx={{ p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
                   <Typography variant="body2">
                     Información adicional con múltiples elementos y métricas del sistema.
                   </Typography>
@@ -137,7 +137,7 @@ export default function TitledSectionDemo() {
             </TitledSection>
           </Box>
 
-          <Box sx={{ mt: 2, p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+          <Box sx={{ mt: 2, p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
             <Typography variant="caption" color="text.secondary">
               Section Block replica exactly the design from full_dashboard.txt
             </Typography>

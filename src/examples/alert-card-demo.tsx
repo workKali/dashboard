@@ -21,13 +21,13 @@ export default function AlertCardDemo() {
                 variant="critical" 
                 title="Alto Riesgo"
               >
-                <Typography variant="body2" sx={{ fontSize: '10px', color: 'text.secondary' }}>
+                <Typography variant="body2" sx={{ fontSize: '10px', color: 'rgb(122, 158, 142)' }}>
                   Se han detectado múltiples anomalías en el sistema que requieren atención inmediata.
                 </Typography>
-                <Typography variant="h4" sx={{ fontSize: '18px', fontWeight: 700, color: 'error.main', mt: 1 }}>
+                <Typography variant="h4" sx={{ fontSize: '18px', fontWeight: 700, color: '#ef4444', mt: 1 }}>
                   12
                 </Typography>
-                <Typography variant="caption" color="text.secondary">
+                <Typography variant="caption" color="rgb(122, 158, 142)">
                   Casos críticos pendientes
                 </Typography>
               </AlertCard>
@@ -36,13 +36,13 @@ export default function AlertCardDemo() {
                 variant="error" 
                 title="Mora"
               >
-                <Typography variant="body2" sx={{ fontSize: '10px', color: 'text.secondary' }}>
+                <Typography variant="body2" sx={{ fontSize: '10px', color: 'rgb(122, 158, 142)' }}>
                   Clientes con pagos retrasados más de 30 días.
                 </Typography>
-                <Typography variant="h4" sx={{ fontSize: '18px', fontWeight: 700, color: 'error.main', mt: 1 }}>
+                <Typography variant="h4" sx={{ fontSize: '18px', fontWeight: 700, color: '#ef4444', mt: 1 }}>
                   8.5%
                 </Typography>
-                <Typography variant="caption" color="text.secondary">
+                <Typography variant="caption" color="rgb(122, 158, 142)">
                   Tasa de morosidad actual
                 </Typography>
               </AlertCard>
@@ -51,13 +51,13 @@ export default function AlertCardDemo() {
                 variant="success" 
                 title="Rendimiento"
               >
-                <Typography variant="body2" sx={{ fontSize: '10px', color: 'text.secondary' }}>
+                <Typography variant="body2" sx={{ fontSize: '10px', color: 'rgb(122, 158, 142)' }}>
                   Métricas de rendimiento del último trimestre.
                 </Typography>
-                <Typography variant="h4" sx={{ fontSize: '18px', fontWeight: 700, color: 'primary.main', mt: 1 }}>
+                <Typography variant="h4" sx={{ fontSize: '18px', fontWeight: 700, color: '#16a34a', mt: 1 }}>
                   94.2%
                 </Typography>
-                <Typography variant="caption" color="text.secondary">
+                <Typography variant="caption" color="rgb(122, 158, 142)">
                   Eficiencia operativa
                 </Typography>
               </AlertCard>
@@ -72,7 +72,7 @@ export default function AlertCardDemo() {
               variant="gradient" 
               title="Dashboard General"
             >
-              <Typography variant="body2" sx={{ fontSize: '10px', color: 'text.secondary' }}>
+              <Typography variant="body2" sx={{ fontSize: '10px', color: 'rgb(122, 158, 142)' }}>
                 Vista combinada de todas las métricas del sistema.
               </Typography>
               <Stack direction="row" spacing={2} sx={{ mt: 1 }}>
@@ -80,7 +80,7 @@ export default function AlertCardDemo() {
                   <Typography variant="h6" sx={{ fontSize: '16px', fontWeight: 700 }}>
                     1,247
                   </Typography>
-                  <Typography variant="caption" color="text.secondary">
+                  <Typography variant="caption" color="rgb(122, 158, 142)">
                     Usuarios activos
                   </Typography>
                 </Box>
@@ -88,7 +88,7 @@ export default function AlertCardDemo() {
                   <Typography variant="h6" sx={{ fontSize: '16px', fontWeight: 700 }}>
                     89.3%
                   </Typography>
-                  <Typography variant="caption" color="text.secondary">
+                  <Typography variant="caption" color="rgb(122, 158, 142)">
                     Satisfacción
                   </Typography>
                 </Box>
@@ -216,39 +216,39 @@ export default function AlertCardDemo() {
                 <Typography variant="body2" sx={{ fontSize: '10px' }}>
                   Notificación importante
                 </Typography>
-                <Typography variant="caption" color="text.secondary">
+                <Typography variant="caption" color="rgb(122, 158, 142)">
                   →
                 </Typography>
               </Box>
             </AlertCard>
           </Box>
 
-          <Box sx={{ mt: 2, p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
-            <Typography variant="caption" color="text.secondary">
+          <Box sx={{ mt: 2, p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
+            <Typography variant="caption" color="rgb(122, 158, 142)">
               Alert Card replica exactly the design patterns from full_dashboard.txt
             </Typography>
             <Box sx={{ mt: 1 }}>
-              <Typography variant="caption" color="text.secondary">
+              <Typography variant="caption" color="rgb(122, 158, 142)">
                 • Border radius: 12px (consistent across all cards)
               </Typography>
             </Box>
             <Box sx={{ mt: 0.5 }}>
-              <Typography variant="caption" color="text.secondary">
+              <Typography variant="caption" color="rgb(122, 158, 142)">
                 • Top border: 3px height with color variants
               </Typography>
             </Box>
             <Box sx={{ mt: 0.5 }}>
-              <Typography variant="caption" color="text.secondary">
+              <Typography variant="caption" color="rgb(122, 158, 142)">
                 • Left border: 3px width (alternative to top border)
               </Typography>
             </Box>
             <Box sx={{ mt: 0.5 }}>
-              <Typography variant="caption" color="text.secondary">
+              <Typography variant="caption" color="rgb(122, 158, 142)">
                 • Padding: 14px 16px, gap: 6px between elements
               </Typography>
             </Box>
             <Box sx={{ mt: 0.5 }}>
-              <Typography variant="caption" color="text.secondary">
+              <Typography variant="caption" color="rgb(122, 158, 142)">
                 • Critical variant: uppercase title with letter spacing
               </Typography>
             </Box>

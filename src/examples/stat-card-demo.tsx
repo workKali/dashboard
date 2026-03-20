@@ -194,7 +194,7 @@ export default function StatCardDemo() {
             </Stack>
           </Box>
 
-          <Box sx={{ mt: 2, p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+          <Box sx={{ mt: 2, p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
             <Typography variant="caption" color="text.secondary">
               Stat Card replica exactly the design from full_dashboard.txt
             </Typography>

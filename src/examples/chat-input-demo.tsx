@@ -24,7 +24,7 @@ export default function PortfolioChatInputDemo() {
               Chat Input from full_dashboard.txt:
             </Typography>
             <Box sx={{ 
-              border: `1px solid rgba(0,0,0,0.12)`, 
+              border: '1px solid rgb(225, 232, 231)', 
               borderRadius: 2, 
               height: 200,
               display: 'flex',
@@ -32,7 +32,7 @@ export default function PortfolioChatInputDemo() {
             }}>
               <Box sx={{ flex: 1, p: 2, overflowY: 'auto' }}>
                 {messages.length === 0 ? (
-                  <Typography variant="body2" color="text.secondary" sx={{ textAlign: 'center', mt: 4 }}>
+                  <Typography variant="body2" color="rgb(122, 158, 142)" sx={{ textAlign: 'center', mt: 4 }}>
                     Escribe una pregunta para comenzar...
                   </Typography>
                 ) : (

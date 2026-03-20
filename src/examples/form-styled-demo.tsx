@@ -34,11 +34,11 @@ export default function FormStyledDemo() {
   // Estilos personalizados para inputs y selects
   const inputSx = {
     '& .MuiOutlinedInput-root': {
-      backgroundColor: theme.palette.background.paper,
-      border: `1px solid ${theme.palette.divider}`,
+      backgroundColor: '#ffffff',
+      border: '1px solid rgb(225, 232, 231)',
       borderRadius: '8px',
       padding: '6px 10px',
-      color: theme.palette.text.primary,
+      color: 'rgb(15, 31, 20)',
       fontSize: 'var(--font-size-base)',
             outline: 'none',
       cursor: 'text',
@@ -54,9 +54,9 @@ export default function FormStyledDemo() {
       '& input': {
         padding: 0,
         fontSize: 'var(--font-size-base)',
-                color: theme.palette.text.primary,
+                color: 'rgb(15, 31, 20)',
         '&::placeholder': {
-          color: theme.palette.text.secondary,
+          color: 'rgb(122, 158, 142)',
           opacity: 0.7,
         },
       },
@@ -64,11 +64,11 @@ export default function FormStyledDemo() {
   };
 
   const selectSx = {
-    backgroundColor: theme.palette.background.paper,
-    border: `1px solid ${theme.palette.divider}`,
+    backgroundColor: '#ffffff',
+    border: '1px solid rgb(225, 232, 231)',
     borderRadius: '8px',
     padding: '6px 10px',
-    color: theme.palette.text.primary,
+    color: 'rgb(15, 31, 20)',
     fontSize: 'var(--font-size-base)',
         outline: 'none',
     cursor: 'pointer',
@@ -84,16 +84,16 @@ export default function FormStyledDemo() {
     '& .MuiSelect-select': {
       padding: 0,
       fontSize: 'var(--font-size-base)',
-            color: theme.palette.text.primary,
+            color: 'rgb(15, 31, 20)',
     },
     '& .MuiSvgIcon-root': {
       fontSize: '16px',
-      color: theme.palette.text.secondary,
+      color: 'rgb(122, 158, 142)',
     },
   };
 
   const labelSx = {
-    color: theme.palette.text.secondary,
+    color: 'rgb(122, 158, 142)',
     fontSize: 'var(--font-size-sm)',
         fontWeight: 500,
     textTransform: 'uppercase',
@@ -104,7 +104,7 @@ export default function FormStyledDemo() {
   const sectionTitleSx = {
     fontSize: 'var(--font-size-sm)',
     fontWeight: 700,
-        color: theme.palette.text.secondary,
+        color: 'rgb(122, 158, 142)',
     textTransform: 'uppercase',
     letterSpacing: '0.08em',
     marginBottom: '8px',
@@ -188,7 +188,7 @@ export default function FormStyledDemo() {
                   </Box>
                 </Box>
 
-                <Divider sx={{ height: '1px', background: theme.palette.divider }} />
+                <Divider sx={{ height: '1px', background: 'rgb(225, 232, 231)' }} />
 
                 {/* Territorio Section */}
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -209,7 +209,7 @@ export default function FormStyledDemo() {
                               value={option.value}
                               sx={{
                                 fontSize: 'var(--font-size-base)',
-                                                                color: theme.palette.text.primary,
+                                                                color: 'rgb(15, 31, 20)',
                               }}
                             >
                               {option.label}
@@ -234,7 +234,7 @@ export default function FormStyledDemo() {
                               value={option.value}
                               sx={{
                                 fontSize: 'var(--font-size-base)',
-                                                                color: theme.palette.text.primary,
+                                                                color: 'rgb(15, 31, 20)',
                               }}
                             >
                               {option.label}
@@ -246,7 +246,7 @@ export default function FormStyledDemo() {
                   </Box>
                 </Box>
 
-                <Divider sx={{ height: '1px', background: theme.palette.divider }} />
+                <Divider sx={{ height: '1px', background: 'rgb(225, 232, 231)' }} />
 
                 {/* Agente Section */}
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -263,7 +263,7 @@ export default function FormStyledDemo() {
                   </Box>
                 </Box>
 
-                <Divider sx={{ height: '1px', background: theme.palette.divider }} />
+                <Divider sx={{ height: '1px', background: 'rgb(225, 232, 231)' }} />
 
                 {/* Estado Solicitud Section */}
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -281,7 +281,7 @@ export default function FormStyledDemo() {
                           value={option.value}
                           sx={{
                             fontSize: 'var(--font-size-base)',
-                                                        color: theme.palette.text.primary,
+                                                        color: 'rgb(15, 31, 20)',
                           }}
                         >
                           {option.label}
@@ -291,7 +291,7 @@ export default function FormStyledDemo() {
                   </FormControl>
                 </Box>
 
-                <Divider sx={{ height: '1px', background: theme.palette.divider }} />
+                <Divider sx={{ height: '1px', background: 'rgb(225, 232, 231)' }} />
 
                 {/* Tablero Section */}
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -330,7 +330,7 @@ export default function FormStyledDemo() {
               <Typography variant="body2" sx={{ fontWeight: 600 }}>
                 Input Styles (sx prop):
               </Typography>
-              <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+              <Box sx={{ p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
                 <pre style={{ fontSize: '12px', overflow: 'auto' }}>
 {`const inputSx = {
   '& .MuiOutlinedInput-root': {
@@ -351,7 +351,7 @@ export default function FormStyledDemo() {
               <Typography variant="body2" sx={{ fontWeight: 600 }}>
                 Select Styles (sx prop):
               </Typography>
-              <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+              <Box sx={{ p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
                 <pre style={{ fontSize: '12px', overflow: 'auto' }}>
 {`const selectSx = {
   backgroundColor: theme.palette.background.paper,
@@ -368,10 +368,10 @@ export default function FormStyledDemo() {
               <Typography variant="body2" sx={{ fontWeight: 600 }}>
                 Label Styles:
               </Typography>
-              <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+              <Box sx={{ p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
                 <pre style={{ fontSize: '12px', overflow: 'auto' }}>
 {`const labelSx = {
-  color: theme.palette.text.secondary,
+  color: 'rgb(122, 158, 142)',
   fontSize: 'var(--font-size-sm)',
   fontWeight: 500,
   textTransform: 'uppercase',

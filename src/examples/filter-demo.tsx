@@ -72,7 +72,7 @@ export default function FilterDemo() {
             </Stack>
           </Box>
 
-          <Box sx={{ mt: 2, p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+          <Box sx={{ mt: 2, p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
             <Typography variant="caption" color="text.secondary">
               Current state: Active = {areFiltersActive ? 'true' : 'false'},
               Has filters = {hasActiveFilters ? 'true' : 'false'}

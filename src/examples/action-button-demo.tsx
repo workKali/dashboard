@@ -189,27 +189,27 @@ export default function DomainActionButtonDemo() {
             </Stack>
           </Box>
 
-          <Box sx={{ mt: 2, p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
-            <Typography variant="caption" color="text.secondary">
+          <Box sx={{ mt: 2, p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
+            <Typography variant="caption" color="rgb(122, 158, 142)">
               Action Button replica exactly the design patterns from full_dashboard.txt
             </Typography>
             <Box sx={{ mt: 1 }}>
-              <Typography variant="caption" color="text.secondary">
+              <Typography variant="caption" color="rgb(122, 158, 142)">
                 • Width: 100% by default, border-radius: 8px
               </Typography>
             </Box>
             <Box sx={{ mt: 0.5 }}>
-              <Typography variant="caption" color="text.secondary">
+              <Typography variant="caption" color="rgb(122, 158, 142)">
                 • Badge: border-radius: 10px, padding: 1px 6px, font-weight: 700
               </Typography>
             </Box>
             <Box sx={{ mt: 0.5 }}>
-              <Typography variant="caption" color="text.secondary">
+              <Typography variant="caption" color="rgb(122, 158, 142)">
                 • Hover: Changes to border color background
               </Typography>
             </Box>
             <Box sx={{ mt: 0.5 }}>
-              <Typography variant="caption" color="text.secondary">
+              <Typography variant="caption" color="rgb(122, 158, 142)">
                 • Icon: Warning icon for risk/mora variants
               </Typography>
             </Box>

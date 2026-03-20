@@ -26,40 +26,40 @@ export default function StatusBadge({
   
   const defaultColors = {
     success: {
-      bg: (theme.palette.primary as any)[50],
-      border: (theme.palette.primary as any)[200],
-      color: (theme.palette.primary as any)[700],
-      indicator: (theme.palette.primary as any)[500],
+      bg: 'rgba(22, 163, 74, 0.1)',
+      border: 'rgba(22, 163, 74, 0.2)',
+      color: '#166534',
+      indicator: '#16a34a',
     },
     warning: {
-      bg: (theme.palette.secondary as any)[100],
-      border: (theme.palette.secondary as any)[200],
-      color: (theme.palette.secondary as any)[700],
-      indicator: (theme.palette.secondary as any)[500],
+      bg: 'rgba(217, 119, 6, 0.1)',
+      border: 'rgba(217, 119, 6, 0.2)',
+      color: '#92400e',
+      indicator: '#d97706',
     },
     info: {
-      bg: (theme.palette.info as any)[50],
-      border: (theme.palette.info as any)[300],
-      color: (theme.palette.info as any)[700],
-      indicator: (theme.palette.info as any)[500],
+      bg: 'rgba(14, 165, 233, 0.1)',
+      border: 'rgba(14, 165, 233, 0.3)',
+      color: '#1e40af',
+      indicator: '#0ea5e9',
     },
     error: {
-      bg: (theme.palette.error as any)[100],
-      border: (theme.palette.error as any)[200],
-      color: (theme.palette.error as any)[600],
-      indicator: (theme.palette.error as any)[500],
+      bg: 'rgba(239, 68, 68, 0.1)',
+      border: 'rgba(239, 68, 68, 0.2)',
+      color: '#dc2626',
+      indicator: '#ef4444',
     },
     critical: {
-      bg: (theme.palette.error as any)[100],
-      color: (theme.palette.error as any)[600],
-      border: (theme.palette.error as any)[200],
-      indicator: (theme.palette.error as any)[500],
+      bg: 'rgba(239, 68, 68, 0.1)',
+      color: '#dc2626',
+      border: 'rgba(239, 68, 68, 0.2)',
+      indicator: '#ef4444',
     },
     default: {
-      bg: theme.palette.background.paper,
-      border: theme.palette.divider,
-      color: theme.palette.text.secondary,
-      indicator: theme.palette.text.secondary,
+      bg: '#ffffff',
+      border: 'rgb(225, 232, 231)',
+      color: 'rgb(122, 158, 142)',
+      indicator: 'rgb(122, 158, 142)',
     },
   };
 
@@ -71,22 +71,22 @@ export default function StatusBadge({
       sx={{
         display: 'flex',
         alignItems: 'center',
-        gap: (theme as any)?.custom?.spacing?.xs || '4px',
+        gap: '4px',
         background: colors.bg,
         border: `1px solid ${colors.border}`,
-        borderRadius: `${(theme as any)?.custom?.borderRadius?.pill || 20}px`,
+        borderRadius: '20px',
         padding: '2px 9px',
-        fontSize: (theme as any)?.custom?.typography?.badge?.fontSize || 'var(--font-size-sm)',
+        fontSize: '10px',
         color: colors.color,
-        fontWeight: (theme as any)?.custom?.typography?.badge?.fontWeight || 600,
+        fontWeight: 600,
         whiteSpace: 'nowrap',
       }}
     >
       {showIndicator && !isCritical && (
         <span
           style={{
-            width: `${(theme as any)?.custom?.sizes?.badge?.width || 5}px`,
-            height: `${(theme as any)?.custom?.sizes?.badge?.height || 5}px`,
+            width: '5px',
+            height: '5px',
             borderRadius: '50%',
             background: colors.indicator,
             flexShrink: 0,

@@ -57,13 +57,13 @@ export default function Tabs({
             padding: '0 16px',
             borderTop: 'none',
             borderRight: 'none',
-            borderBottom: `2px solid ${tab.id === activeTab ? theme.palette.primary.main : 'transparent'}`,
+            borderBottom: `2px solid ${tab.id === activeTab ? '#16a34a' : 'transparent'}`,
             borderLeft: 'none',
             borderImage: 'initial',
             cursor: tab.disabled ? 'not-allowed' : 'pointer',
             background: 'transparent',
-            color: tab.id === activeTab ? theme.palette.primary.main : theme.palette.text.secondary,
-            fontSize: 'var(--font-size-md)',
+            color: tab.id === activeTab ? '#16a34a' : 'rgb(15, 31, 20)',
+            fontSize: '10px',
                         fontWeight: tab.id === activeTab ? 600 : 400,
             whiteSpace: 'nowrap',
             transition: 'color 0.15s',
@@ -74,13 +74,13 @@ export default function Tabs({
             minHeight: 'auto', // Override MUI default min height
             '&:hover': {
               color: tab.disabled 
-                ? theme.palette.text.secondary 
+                ? 'rgb(122, 158, 142)' 
                 : tab.id === activeTab 
-                  ? theme.palette.primary.dark 
-                  : theme.palette.text.primary,
+                  ? '#166534' 
+                  : 'rgb(15, 31, 20)',
             },
             '&.Mui-selected': {
-              color: theme.palette.primary.main,
+              color: '#16a34a',
             },
             '&.Mui-disabled': {
               opacity: 0.5,

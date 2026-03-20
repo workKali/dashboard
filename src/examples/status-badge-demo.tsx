@@ -145,7 +145,7 @@ export default function StatusBadgeDemo() {
             </Stack>
           </Box>
 
-          <Box sx={{ mt: 2, p: 2, bgcolor: 'background.default', borderRadius: 1 }}>
+          <Box sx={{ mt: 2, p: 2, bgcolor: '#ffffff', borderRadius: 1 }}>
             <Typography variant="caption" color="text.secondary">
               Status Badge replicates exactly the design patterns found in full_dashboard.txt
             </Typography>
