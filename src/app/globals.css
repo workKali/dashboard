@@ -3,24 +3,275 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Design token font sizes - sync with Tailwind config */
+  --font-size-xs: 9.5px;
+  --font-size-sm: 10px;
+  --font-size-base: 10.5px;
+  --font-size-md: 11px;
+  --font-size-lg: 13px;
+  --font-size-xl: 22px;
+  
+  /* Custom CSS variables for dynamic theming */
+  --color-primary: rgb(22, 163, 74);
+  --color-primary-light: rgb(187, 247, 208);
+  --color-primary-dark: rgb(22, 101, 52);
+  
+  --color-secondary: rgb(217, 119, 6);
+  --color-secondary-light: rgb(253, 211, 195);
+  --color-secondary-dark: rgb(146, 64, 14);
+  
+  --color-error: rgb(220, 38, 38);
+  --color-error-light: rgb(252, 165, 165);
+  --color-error-dark: rgb(127, 29, 29);
+  
+  --color-warning: rgb(245, 158, 11);
+  --color-warning-light: rgb(253, 230, 138);
+  --color-warning-dark: rgb(146, 64, 14);
+  
+  --color-info: rgb(59, 130, 246);
+  --color-info-light: rgb(191, 219, 254);
+  --color-info-dark: rgb(30, 64, 175);
+  
+  --color-success: rgb(22, 163, 74);
+  --color-success-light: rgb(187, 247, 208);
+  --color-success-dark: rgb(22, 101, 52);
+  
+  --color-text-primary: rgb(17, 24, 39);
+  --color-text-secondary: rgb(75, 85, 99);
+  --color-text-disabled: rgb(156, 163, 175);
+  
+  --color-background-default: rgb(255, 255, 255);
+  --color-background-paper: rgb(255, 255, 255);
+  --color-divider: rgb(229, 231, 235);
+  
+  /* Border radius tokens */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+  --border-radius-pill: 20px;
+  
+  /* Spacing tokens */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    
+    /* Dark mode color adjustments */
+    --color-text-primary: rgb(243, 244, 246);
+    --color-text-secondary: rgb(156, 163, 175);
+    --color-text-disabled: rgb(107, 114, 128);
+    
+    --color-background-default: rgb(17, 24, 39);
+    --color-background-paper: rgb(31, 41, 55);
+    --color-divider: rgb(75, 85, 99);
   }
+}
+
+/* Global styles with Tailwind utilities */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom utility classes that sync with MUI theme */
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-disabled {
+  color: var(--color-text-disabled);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-error {
+  background-color: var(--color-error);
+}
+
+.bg-warning {
+  background-color: var(--color-warning);
+}
+
+.bg-info {
+  background-color: var(--color-info);
+}
+
+.bg-success {
+  background-color: var(--color-success);
+}
+
+/* Border utilities */
+.border-primary {
+  border-color: var(--color-primary);
+}
+
+.border-secondary {
+  border-color: var(--color-secondary);
+}
+
+.border-error {
+  border-color: var(--color-error);
+}
+
+.border-warning {
+  border-color: var(--color-warning);
+}
+
+.border-info {
+  border-color: var(--color-info);
+}
+
+.border-success {
+  border-color: var(--color-success);
+}
+
+.border-divider {
+  border-color: var(--color-divider);
+}
+
+/* Font size utilities that match design tokens */
+.text-xs {
+  font-size: var(--font-size-xs);
+}
+
+.text-sm {
+  font-size: var(--font-size-sm);
+}
+
+.text-base {
+  font-size: var(--font-size-base);
+}
+
+.text-md {
+  font-size: var(--font-size-md);
+}
+
+.text-lg {
+  font-size: var(--font-size-lg);
+}
+
+.text-xl {
+  font-size: var(--font-size-xl);
+}
+
+/* Spacing utilities */
+.p-xs {
+  padding: var(--spacing-xs);
+}
+
+.p-sm {
+  padding: var(--spacing-sm);
+}
+
+.p-md {
+  padding: var(--spacing-md);
+}
+
+.p-lg {
+  padding: var(--spacing-lg);
+}
+
+.p-xl {
+  padding: var(--spacing-xl);
+}
+
+.m-xs {
+  margin: var(--spacing-xs);
+}
+
+.m-sm {
+  margin: var(--spacing-sm);
+}
+
+.m-md {
+  margin: var(--spacing-md);
+}
+
+.m-lg {
+  margin: var(--spacing-lg);
+}
+
+.m-xl {
+  margin: var(--spacing-xl);
+}
+
+/* Border radius utilities */
+.rounded-pill {
+  border-radius: var(--border-radius-pill);
+}
+
+.rounded-button {
+  border-radius: var(--border-radius-md);
+}
+
+.rounded-card {
+  border-radius: var(--border-radius-lg);
+}
+
+/* Component-specific styles */
+.glow-effect {
+  box-shadow: 0 0 0 1px var(--color-primary);
+  transition: box-shadow 0.2s ease;
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 0 2px var(--color-primary-light);
+}
+
+/* Animation utilities */
+.fade-in {
+  animation: fadeIn 0.15s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
